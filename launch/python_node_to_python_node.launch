@@ -1,0 +1,12 @@
+<!-- Starts up everything needed to run the example pub/subs -->
+<launch>
+  <!-- publisher node will publish a custom message. -->
+  <node pkg="performance_test" type="pypublisher.py" name="pypublisher" output="screen">
+  	<param name="rate" value="1" />
+  </node>
+
+  <!-- subscriber node will publish a custom message. -->
+  <node pkg="performance_test" type="pysubscriber.py" name="pysubscriber" output="screen" />
+
+
+</launch>

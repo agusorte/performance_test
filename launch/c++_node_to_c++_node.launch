@@ -1,0 +1,12 @@
+<!-- Starts up everything needed to run the example pub/subs -->
+<launch>
+
+
+  <!-- publisher node will publish a custom message. -->
+  <node pkg="performance_test" type="publisherRos_node" name="publisherRos_node" args=" 1"  output="screen" />
+
+  <!-- subscriber node will publish a custom message. -->
+  <node pkg="performance_test" type="subscriberRos_node" name="subscriberRos_node" output="screen" />
+
+
+</launch>
